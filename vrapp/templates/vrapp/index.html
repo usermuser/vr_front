@@ -1,0 +1,9 @@
+{% if latest_question_list %}
+    <ul>
+    {% for process in latest_process_list %}
+        <li><a href="/vrapp/{{ process.id }}/">{{ process.duration}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
