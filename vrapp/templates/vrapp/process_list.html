@@ -1,0 +1,13 @@
+{% if latest_process_list %}
+    <ul>
+    {% for process in latest_process_list %}
+        <li><a href="/vrapp/{{ process.id }}/">{{ process.duration}}</a></li>
+        <li>name {{ process.name }}</li>
+        <li>start time: {{ process.start_time }}</li>
+        <li>stop time: {{ process.stop_time }}</li>
+        <li>duration: {{ process.duration}}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}

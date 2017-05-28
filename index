@@ -2,7 +2,6 @@
     <ul>
     {% for process in latest_process_list %}
         <li><a href="/vrapp/{{ process.id }}/">{{ process.duration}}</a></li>
-ZZ
     {% endfor %}
     </ul>
 {% else %}
