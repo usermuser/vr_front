@@ -1,3 +1,15 @@
+# ignore sqlite3 files, ex: db.sqlite
+db.*
+
+# ignore postgres files, ex: django_db
+*_db
+
+# ignore pyc files
+*.pyc
+
+#ignore backup files, ex: *.bak
+*.bak
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
